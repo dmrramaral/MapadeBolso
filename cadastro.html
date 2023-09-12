@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+        <!-- Formulário de criação de um mapa mental, com tipo(Medicina, Administração, Contabilidade...), categoria(Se for medicina-> Anatomia, medicamentos... Se for Contabilidade-> Publica, Privada...), envio de imagem, descrição -->
+        <form action="">
+
+            <label for="tipo">Tipo</label>
+            <input type="text" name="tipo" id="tipo" placeholder="Tipo de estudo" required>
+
+            <label for="categoria">Categoria</label>
+            <select name="categoria" id="categoria">
+                <option value="anatomia">Anatomia</option>
+                <option value="medicamentos">Medicamentos</option>
+                <option value="legislacao">Legislação</option>
+                <option value="contabilidade">Contabilidade</option>
+                <option value="publica">Contabilidade Pública</option>
+                <option value="privada">Contabilidade Privada</option>
+            </select>
+
+            <label for="imagem">Imagem</label>
+            <input type="file" name="imagem" id="imagem">
+
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Descrição do mapa mental"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>    
+    </main>
+    
+</body>
+</html>
