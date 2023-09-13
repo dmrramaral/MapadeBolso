@@ -1,28 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa de Bolso</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
+
 <body>
+
+    <header>
+        <h1>Mapa de Bolso</h1>
+
+        <nav>
+            <ul style="list-style-type: none; display: flex; justify-content: space-evenly; ">
+                <li>
+                    <a href="">
+                        <i class="bi bi-house-door"></i>
+                        <p>Início</p>
+                    </a>
+                </li><!-- Início -->
+                <li><a href=""><i class="bi bi-journal-bookmark"></i>
+                        <p>Anotações </p>
+                    </a> </li><!-- Anotações -->
+                <li><a href=""><i class="bi bi-star-fill"></i>
+                        <p> Favoritos </p>
+                    </a> </li><!-- Favoritos -->
+                <li><a href=""><i class="bi bi-plus-circle-fill"></i>
+                        <p>Contribua </p>
+                    </a> </li><!-- Contribua -->
+                <li><a href=""><i class="bi bi-gear"></i>
+                        <p>Ajuste </p>
+                    </a> </li><!-- Ajustes -->
+
+            </ul>
+        </nav>
+
+
+        <form action="">
+            <input type="text" name="search" id="search" placeholder="Pesquisar">
+            <button type="submit"><i class="bi bi-search"></i></button>
+        </form>
+
+
+
+
+
+    </header>
 
     <main>
         <!-- Formulário de criação de um mapa mental, com tipo(Medicina, Administração, Contabilidade...), categoria(Se for medicina-> Anatomia, medicamentos... Se for Contabilidade-> Publica, Privada...), 
             envio de imagem, descrição -->
         <form action="" autocomplete="on">
 
-            <label for="tipo">Tipo</label>
-            <select name="tipo" id="tipo">
-                <option>Selecione</option>
+
+            <select name="area" id="area">
+                <option>Selecione a Área de Estudo</option>
                 <option value="medicina">Medicina</option>
                 <option value="administracao">Administração</option>
                 <option value="contabilidade">Contabilidade</option>
             </select>
 
-            <label for="categoria">Categoria</label>
-            <select name="categoria" id="categoria">
-                <option>Selecione</option>
+            <select name="topico" id="topico">
+                <option>Selecione o Tópico da Área de Estudo</option>
                 <option value="anatomia">Anatomia</option>
                 <option value="medicamentos">Medicamentos</option>
                 <option value="legislacao">Legislação</option>
@@ -30,16 +71,18 @@
                 <option value="contabilidadePrivada">Contabilidade Privada</option>
             </select>
 
-            <label for="imagem">Imagem</label>
-            <input type="file" name="imagem" id="imagem">
+            <label for="imagem">Insira o arquivo PNG</label>
+            <input type="file" name="imagem" id="imagem" value="Insira o arquivo PNG">
 
-            <label for="descricao">Descrição</label>
-            <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Descrição do mapa mental"></textarea>
+     
+            <textarea name="descricao" id="descricao" cols="30" rows="10"
+                placeholder="Descrição do mapa mental"></textarea>
 
-            <button type="submit">Enviar</button>
-            <button type="reset">Cancelar</button>
-        </form>    
+
+            <button type="submit">Criar Mapa</button>
+        </form>
     </main>
-    
+
 </body>
+
 </html>
