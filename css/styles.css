@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: Ubuntu;
+    display: flex;
+}
+
+main #paginaAzul {
+    background: linear-gradient(180deg, #2C64C6 0%, rgba(0, 204, 229, 0.80) 100%);
+  
+    width: 50%;
+
+
+}
+
+main #paginaLogin {
+    text-align: center;
+    background: #FFFFFF;
+  
+    width: 50%;
+
+}
+
+
+
+main #paginaLogin h1 {
+    margin-top: 100px;
+    color: #2C64C6;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+main #paginaLogin input,
+button {
+    border-radius: 25px;
+    border: 1px solid #2C64C6;
+    background: #FFF;
+
+    width: 550px;
+    height: 80px;
+    flex-shrink: 0;
+
+    text-align: center;
+    margin-top: 43px;
+
+
+}
+
+main #paginaLogin form {
+    margin-top: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #paginaLogin #btnAcao {
+    border-radius: 25px;
+    background: #2C64C6;
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+
+}
+
+main #paginaLogin form #btnAcao::placeholder {
+
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+
+}
+
+main #paginaLogin input::placeholder {
+    color: #C9C0C0;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+main #nomeEmpresa {
+
+    width: 275px;
+    height: 130px;
+
+
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+main #logo {
+    margin-top: 125px;
+    display: flex;
+    justify-content: center;
+}
+
+
+main #textItalic {
+    margin-top: 84px;
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+main #textSecundary {
+    margin-top: 84px;
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
