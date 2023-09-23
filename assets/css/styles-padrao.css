@@ -197,6 +197,32 @@ main #paginaCadastro {
     width: 50%;
 }
 
+main #paginaCadastro #name {
+    background-image: url(/assets/img/person-circle.png);
+    background-repeat: no-repeat;
+    background-position: 12px 12px;
+    background-size: auto 65%;
+
+}
+
+main #paginaCadastro #email {
+    background-image: url(/assets/img/email.png);
+    background-repeat: no-repeat;
+    background-position: 0.75rem 0.75rem; /* 12px / 16px = 0.75rem */
+    background-size: auto 65%;
+}
+
+
+main #paginaCadastro #password {
+    background-image: 
+        url('/assets/img/lock-fill.png'), /* Imagem do cadeado */
+        url('/assets/img/eye-slash-fill.png'); /* Imagem do ícone de olho cruzado */
+    
+    background-repeat: no-repeat, no-repeat; /* Impede a repetição para ambas as imagens */
+    background-position: left 10px top 10px, right 10px top 10px; /* Define a posição para ambas as imagens */
+    background-size: auto 65%, auto 65%; /* Define o tamanho para ambas as imagens */
+}
+
 /* Estilos para o título h1 em #paginaCadastro */
 main #paginaCadastro h1 {
     margin-top: 70px;
