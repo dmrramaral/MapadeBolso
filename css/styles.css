@@ -1,0 +1,393 @@
+/* Importações */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+/* Variáveis de cores */
+:root {
+    --primary-color: #2C64C6;
+    --secondary-color: #00CCE5;
+    --tertiary-color: #FFFFFF;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o elemento main */
+main {
+    font-family: Ubuntu;
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+/* Estilos para #paginaAzul */
+main #paginaAzul {
+    background: linear-gradient(180deg, var(--primary-color) 0%, rgba(0, 204, 229, 0.80) 100%);
+    width: 50%;
+}
+
+/* Estilos para #paginaLogin */
+main #paginaLogin {
+    text-align: center;
+    background: #FFFFFF;
+    width: 50%;
+}
+
+/* Estilos para o título h1 em #paginaLogin */
+main #paginaLogin h1 {
+    margin-top: 70px;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Estilos para inputs e botão em #paginaLogin */
+main #paginaLogin input,
+main #paginaLogin button {
+    border-radius: 25px;
+    border: 1px solid var(--primary-color);
+    background: #FFF;
+    width: 500px;
+    height: 80px;
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: 43px;
+}
+
+/* Estilos para o formulário em #paginaLogin */
+main #paginaLogin form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para o botão de ação #btnAcao em #paginaLogin */
+main #paginaLogin #btnAcao {
+    border-radius: 25px;
+    background: var(--primary-color);
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Estilos para placeholders de input em #paginaLogin */
+main #paginaLogin input::placeholder {
+    color: #C9C0C0;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Estilos para parágrafos e links em #paginaLogin */
+main #paginaLogin p,
+main #paginaLogin a {
+    margin-top: 16px;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+/* Estilos para #termo em #paginaLogin */
+main #paginaLogin #termo {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Estilos para #nomeEmpresa */
+main #nomeEmpresa {
+    width: 275px;
+    height: 130px;
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Estilos para #logo */
+main #logo {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para #textItalic e #textSecundary em #paginaAzul */
+main #paginaAzul #textItalic,
+main #paginaAzul #textSecundary {
+    margin-top: 84px;
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main #paginaAzul #textSecundary {
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Estilos adicionais */
+main #paginaAzul p {
+    padding: 0.2rem;
+}
+
+/* Estilos para #contEstud em #paginaLogin */
+main #paginaLogin #contEstud {
+    color: rgba(0, 204, 229, 0.88) !important;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 2rem;
+}
+
+main #paginaLogin input:focus,
+main #paginaCadastro input:focus {
+    outline: var(--secondary-color) solid 2px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilos para a pagina de cadastro */
+
+/* Estilos para #paginaCadastro */
+main #paginaCadastro {
+    text-align: center;
+    background: #FFFFFF;
+    width: 50%;
+}
+
+/* Estilos para o título h1 em #paginaCadastro */
+main #paginaCadastro h1 {
+    margin-top: 70px;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Estilos para inputs e botão em #paginaCadastro */
+main #paginaCadastro input,
+main #paginaCadastro button {
+    border-radius: 25px;
+    border: 1px solid var(--primary-color);
+    background: #FFF;
+    width: 450px;
+    height: 70px;
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: 35px;
+}
+
+/* Estilos para o formulário em #paginaCadastro */
+main #paginaCadastro form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para o botão de ação #btnAcao em #paginaCadastro */
+main #paginaCadastro #btnAcao {
+    border-radius: 20px;
+    background: var(--primary-color);
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Estilos para placeholders de input em #paginaCadastro */
+main #paginaCadastro input::placeholder {
+    color: #C9C0C0;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Estilos para parágrafos e links em #paginaCadastro */
+main #paginaCadastro p,
+main #paginaCadastro a {
+    margin-top: 16px;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    main #paginaLogin input,
+    main #paginaLogin button {
+        width: 380px;
+        height: 60px;
+    }
+
+    main #paginaLogin h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    main #paginaLogin {
+        width: 100vw;
+        margin-bottom: 40px;
+    }
+
+    main #paginaLogin h1 {
+        font-size: 40px;
+    }
+
+    main #paginaLogin input,
+    main #paginaLogin button {
+        width: 350px;
+        height: 50px;
+    }
+
+    main #paginaLogin input::placeholder,
+    main #paginaLogin #btnAcao {
+        font-size: 15px;
+    }
+
+    main #paginaLogin p,
+    main #paginaLogin a {
+        font-size: 13px;
+    }
+
+    main #paginaCadastro {
+        width: 100vw;
+        margin-bottom: 40px;
+    }
+
+    main #paginaAzul {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    main #paginaCadastro input,
+    main #paginaCadastro button {
+        width: 350px;
+        height: 50px;
+
+    }
+
+    main #paginaCadastro input::placeholder,
+    main #paginaCadastro #btnAcao {
+
+        font-size: 15px;
+
+    }
+
+
+
+    main #paginaCadastro h1 {
+
+        font-size: 30px;
+
+    }
+
+    main #nomeEmpresa {
+
+        font-size: 35px;
+
+    }
+
+    /* Estilos para #logo */
+    main #logo {
+        margin-top: 25px;
+
+    }
+
+    /* Estilos para #textItalic e #textSecundary em #paginaAzul */
+    main #paginaAzul #textItalic {
+        font-size: 25px;
+
+    }
+
+    main #paginaAzul #textSecundary {
+        margin-top: 15px;
+        padding: 0 10px;
+        font-size: 30px;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    main #paginaCadastro input,
+    main #paginaCadastro button {
+        width: 300px;
+
+    }
+
+    main #paginaAzul #textItalic {
+        font-size: 20px;
+
+    }
+
+    main #paginaAzul #textSecundary {
+        margin-top: 10px;
+        padding: 0 15px;
+        font-size: 20px;
+    }
+
+}
