@@ -6,6 +6,7 @@
     --primary-color: #2C64C6;
     --secondary-color: #00CCE5;
     --tertiary-color: #FFFFFF;
+    font-family: 'Ubuntu';
 }
 
 /* Reset CSS */
@@ -80,6 +81,7 @@ main #paginaLogin #btnAcao {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-top: 15px;
 }
 
 /* Estilos para placeholders de input em #paginaLogin */
@@ -108,7 +110,9 @@ main #paginaLogin a {
 }
 
 /* Estilos para #termo em #paginaLogin */
-main #paginaLogin #termo {
+main #paginaLogin #termo,
+main #paginaCadastro #termo
+{
     font-size: 12px;
     font-style: italic;
     font-weight: 400;
@@ -267,7 +271,9 @@ main #paginaCadastro a {
 @media screen and (max-width: 1024px) {
 
     main #paginaLogin input,
-    main #paginaLogin button {
+    main #paginaLogin button,
+    main #paginaCadastro input,
+    main #paginaCadastro button {
         width: 380px;
         height: 60px;
     }
