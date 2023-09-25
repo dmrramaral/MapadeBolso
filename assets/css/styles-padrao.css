@@ -236,6 +236,16 @@ main #paginaCadastro #password {
     background-size: auto 65%, auto 65%; /* Define o tamanho para ambas as imagens */
 }
 
+main #paginaCadastro #confirmPassword {
+    background-image: 
+        url('/assets/img/lock-fill.png'), /* Imagem do cadeado */
+        url('/assets/img/eye-slash-fill.png'); /* Imagem do ícone de olho cruzado */
+    
+    background-repeat: no-repeat, no-repeat; /* Impede a repetição para ambas as imagens */
+    background-position: left 10px top 10px, right 10px top 10px; /* Define a posição para ambas as imagens */
+    background-size: auto 65%, auto 65%; /* Define o tamanho para ambas as imagens */
+}
+
 /* Estilos para o título h1 em #paginaCadastro */
 main #paginaCadastro h1 {
     margin-top: 70px;
