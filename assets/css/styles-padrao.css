@@ -60,6 +60,7 @@ main #paginaLogin button {
     flex-shrink: 0;
     text-align: center;
     margin-top: 43px;
+    font-size: 25px;
 }
 
 /* Estilos para o formulário em #paginaLogin */
@@ -256,6 +257,7 @@ main #paginaCadastro button {
     flex-shrink: 0;
     text-align: center;
     margin-top: 35px;
+    font-size: 20px;
 }
 
 /* Estilos para o formulário em #paginaCadastro */
@@ -264,6 +266,7 @@ main #paginaCadastro form {
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 }
 
 /* Estilos para o botão de ação #btnAcao em #paginaCadastro */
