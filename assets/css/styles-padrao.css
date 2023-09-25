@@ -84,6 +84,19 @@ main #paginaLogin #btnAcao {
     margin-top: 15px;
 }
 
+/* Estilos para o botão de ação #btnAcao em #paginaLogin */
+main #paginaLogin #btnAcao a {
+    
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 15px;
+}
+
 /* Estilos para placeholders de input em #paginaLogin */
 main #paginaLogin input::placeholder {
     color: #C9C0C0;
@@ -237,7 +250,8 @@ main #paginaCadastro h1 {
 
 /* Estilos para inputs e botão em #paginaCadastro */
 main #paginaCadastro input,
-main #paginaCadastro button {
+main #paginaCadastro button,
+main #paginaCadastro button a {
     border-radius: 25px;
     border: 1px solid var(--primary-color);
     background: #FFF;
