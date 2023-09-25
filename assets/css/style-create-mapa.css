@@ -1,0 +1,229 @@
+/* Importações */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+/* Variáveis de cores */
+:root {
+    --primary-color: #2C64C6;
+    --secondary-color: #00CCE5;
+    --tertiary-color: #FFFFFF;
+    font-family: 'Ubuntu';
+}
+
+body {
+    background: linear-gradient(180deg, #2C64C6 0%, rgba(0, 204, 229, 0.88) 100%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    background: #2C64C6 !important;
+    color: var(--tertiary-color);
+    padding: 50px 20px 50px 20px;
+
+
+}
+
+header h1 {
+    width: 275px;
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0px 20px;
+}
+
+header nav ul li {
+    text-align: center;
+    margin: 0px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+header nav ul li i {
+    font-size: 35px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.bi-house-door {
+    color: var(--tertiary-color);
+    width: 1000px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+header #search {
+    text-align: center;
+    border-radius: 25px;
+    background: rgba(0, 204, 229, 0.88);
+    color: var(--tertiary-color);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+#search::placeholder {
+    background-image: url(/assets/img/search.png);
+    background-repeat: no-repeat;
+    background-position: 0.65rem 0.25rem;
+    /* 12px / 16px = 0.75rem */
+    background-size: auto 85%;
+    color: #FFF;
+}
+
+
+main {
+
+    margin: 20px;
+    padding: 20px;
+
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+main form .areaBotoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+
+}
+
+main form #area,
+main form #topico {
+    width: 500px;
+    height: 50px;
+    border-radius: 25px;
+    background: rgba(0, 204, 229, 0.88);
+    color: var(--tertiary-color);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+main form .arquivo-envio {
+
+    height: 50px;
+    border-radius: 25px;
+    background: rgba(0, 204, 229, 0.88);
+    color: var(--tertiary-color);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+main form .text-descricao textarea {
+    width: 500px;
+    height: 200px;
+    border-radius: 25px;
+    background: rgba(0, 204, 229, 0.88);
+    color: var(--tertiary-color);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+
+/* Estilos para inputs e botão em #paginaLogin */
+button {
+    border-radius: 25px;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    width: 500px;
+    height: 80px;
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: 43px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    main form * {
+        font-size: 15px;
+    }
+
+    main form #area,
+    main form #topico {
+
+        height: 50px;
+        border-radius: 25px;
+        background: rgba(0, 204, 229, 0.88);
+        color: var(--tertiary-color);
+        font-size: 15px;
+        font-weight: 700;
+        padding: 10px;
+        margin-bottom: 20px;
+
+    }
+
+
+
+    main form .areaBotoes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+
+
+}

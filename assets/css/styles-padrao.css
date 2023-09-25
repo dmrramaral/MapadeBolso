@@ -87,7 +87,7 @@ main #paginaLogin #btnAcao {
 
 /* Estilos para o botão de ação #btnAcao em #paginaLogin */
 main #paginaLogin #btnAcao a {
-    
+
     color: #FFF;
     text-align: center;
     font-family: Ubuntu;
@@ -125,8 +125,7 @@ main #paginaLogin a {
 
 /* Estilos para #termo em #paginaLogin */
 main #paginaLogin #termo,
-main #paginaCadastro #termo
-{
+main #paginaCadastro #termo {
     font-size: 12px;
     font-style: italic;
     font-weight: 400;
@@ -222,29 +221,40 @@ main #paginaCadastro #name {
 main #paginaCadastro #email {
     background-image: url(/assets/img/email.png);
     background-repeat: no-repeat;
-    background-position: 0.75rem 0.75rem; /* 12px / 16px = 0.75rem */
+    background-position: 0.75rem 0.75rem;
+    /* 12px / 16px = 0.75rem */
     background-size: auto 65%;
 }
 
 
 main #paginaCadastro #password {
-    background-image: 
-        url('/assets/img/lock-fill.png'), /* Imagem do cadeado */
-        url('/assets/img/eye-slash-fill.png'); /* Imagem do ícone de olho cruzado */
-    
-    background-repeat: no-repeat, no-repeat; /* Impede a repetição para ambas as imagens */
-    background-position: left 10px top 10px, right 10px top 10px; /* Define a posição para ambas as imagens */
-    background-size: auto 65%, auto 65%; /* Define o tamanho para ambas as imagens */
+    background-image:
+        url('/assets/img/lock-fill.png'),
+        /* Imagem do cadeado */
+        url('/assets/img/eye-slash-fill.png');
+    /* Imagem do ícone de olho cruzado */
+
+    background-repeat: no-repeat, no-repeat;
+    /* Impede a repetição para ambas as imagens */
+    background-position: left 10px top 10px, right 10px top 10px;
+    /* Define a posição para ambas as imagens */
+    background-size: auto 65%, auto 65%;
+    /* Define o tamanho para ambas as imagens */
 }
 
 main #paginaCadastro #confirmPassword {
-    background-image: 
-        url('/assets/img/lock-fill.png'), /* Imagem do cadeado */
-        url('/assets/img/eye-slash-fill.png'); /* Imagem do ícone de olho cruzado */
-    
-    background-repeat: no-repeat, no-repeat; /* Impede a repetição para ambas as imagens */
-    background-position: left 10px top 10px, right 10px top 10px; /* Define a posição para ambas as imagens */
-    background-size: auto 65%, auto 65%; /* Define o tamanho para ambas as imagens */
+    background-image:
+        url('/assets/img/lock-fill.png'),
+        /* Imagem do cadeado */
+        url('/assets/img/eye-slash-fill.png');
+    /* Imagem do ícone de olho cruzado */
+
+    background-repeat: no-repeat, no-repeat;
+    /* Impede a repetição para ambas as imagens */
+    background-position: left 10px top 10px, right 10px top 10px;
+    /* Define a posição para ambas as imagens */
+    background-size: auto 65%, auto 65%;
+    /* Define o tamanho para ambas as imagens */
 }
 
 /* Estilos para o título h1 em #paginaCadastro */
@@ -280,7 +290,7 @@ main #paginaCadastro form {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
 }
 
 /* Estilos para o botão de ação #btnAcao em #paginaCadastro */
@@ -448,5 +458,48 @@ main #paginaCadastro a {
         padding: 0 15px;
         font-size: 20px;
     }
+
+}
+
+/* Seção que estou trabalhando com login */
+.popUpLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.confirmLogin {
+    width: 50%;
+    border: black 3px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: seagreen;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+    
+
+
+
+}
+
+.errorLogin {
+    width: 50%;
+    border: black 3px solid;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+    background-color: var(--primary-color);
 
 }

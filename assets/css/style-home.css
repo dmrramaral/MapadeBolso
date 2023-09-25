@@ -92,7 +92,7 @@ main .area-cards{
     display: flex;
     flex-wrap: wrap;
     align-self:flex-start;
-
+    justify-content: space-evenly;
 
     margin: 20px 20px 20px 20px;
 }
@@ -106,13 +106,21 @@ main .area-cards .box {
     border-radius: 15px;
     padding: 10px;
     text-align: center;
-    width: 285px;
-    height: 133px;
+    width: 250px;
+    height: 150px;
     color: #FFF;
-    margin: 30px;
+    margin: 10px;
     
 
 }
 main .area-cards .box img{
     border-radius: 15px;
+}
+
+main .box-icons{
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    
 }
