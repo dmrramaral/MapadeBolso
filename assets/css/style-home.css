@@ -14,10 +14,10 @@ body{
 }
 
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-   
+    align-items: baseline;   
     background: #2C64C6 !important;
     color: var(--tertiary-color);
     padding: 50px 20px 50px 20px;
@@ -61,7 +61,7 @@ header nav ul li i {
 
 .bi-house-door {
     color: var(--tertiary-color);
-    width: 1000px;
+  
 }
 
 a {
@@ -106,8 +106,7 @@ main .area-cards .box {
     border-radius: 15px;
     padding: 10px;
     text-align: center;
-    width: 250px;
-    height: 150px;
+    
     color: #FFF;
     margin: 10px;
     
@@ -124,3 +123,101 @@ main .box-icons{
     margin-bottom: 5px;
     
 }
+
+@media screen and (max-width: 1024px) {
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px 10px 20px;
+        
+    }
+
+    header nav ul li i {
+        font-size: 15px;
+    }
+
+    header nav ul li  {
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    
+    #search{
+        width: 300px;
+        height: 20px;
+        margin-top: 10px;
+        font-size: 21px;
+        font-weight: 700;
+        padding: 5px;
+    }
+
+    #search::placeholder{
+      
+        font-size: 15px;
+       
+    }
+
+    main .area-cards{
+        display: flex;
+        flex-wrap: wrap;
+        align-self:flex-start;
+        justify-content: space-evenly;
+        align-items: center;
+       
+    }
+
+    
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    header{
+        width: 100%;
+    }
+
+    main .area-cards {
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+   
+
+    
+
+}
+
+@media screen and (max-width: 600px) {
+
+     header nav ul li i {
+        font-size: 10px;
+    }
+    header nav ul li  {
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    main .area-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+}
+
+

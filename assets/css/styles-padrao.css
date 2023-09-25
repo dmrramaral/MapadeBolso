@@ -294,7 +294,8 @@ main #paginaCadastro form {
 }
 
 /* Estilos para o botão de ação #btnAcao em #paginaCadastro */
-main #paginaCadastro #btnAcao {
+main #paginaCadastro #btnAcao,
+main #paginaLogin #btnCadastro {
     border-radius: 20px;
     background: var(--primary-color);
     color: #FFF;
@@ -369,7 +370,9 @@ main #paginaCadastro a {
     }
 
     main #paginaLogin input::placeholder,
-    main #paginaLogin #btnAcao {
+    main #paginaLogin #btnAcao,
+    main #paginaLogin #btnCadastro
+    {
         font-size: 15px;
     }
 
@@ -396,7 +399,9 @@ main #paginaCadastro a {
     }
 
     main #paginaCadastro input::placeholder,
-    main #paginaCadastro #btnAcao {
+    main #paginaCadastro #btnAcao,
+    main #paginaCadastro #btnCadastro{
+        
 
         font-size: 15px;
 
@@ -500,6 +505,6 @@ main #paginaCadastro a {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Ubuntu';
-    background-color: var(--primary-color);
+   
 
 }
