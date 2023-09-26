@@ -36,6 +36,7 @@ function validPassword(){
 
 /* direcionamento de nav */
 
+
 let contribua = document.querySelector('.bi-plus-circle-fill');
 
 contribua.addEventListener('click', function () {
@@ -48,7 +49,7 @@ home.addEventListener('click', function () {
     window.location.href = "/paginas/home.html";
 });
 
-let sair = document.querySelector('.bi-gear');
-sair = addEventListener('click', function () {
+let voltarPaginaLogin = document.querySelector('.bi-gear');
+voltarPaginaLogin.addEventListener('click', function () {
     window.location.href = "/index.html";
 });
