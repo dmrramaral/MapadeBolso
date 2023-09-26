@@ -33,3 +33,23 @@ function validPassword(){
     }
   
 }
+
+/* direcionamento de nav */
+
+
+let contribua = document.querySelector('.bi-plus-circle-fill');
+
+contribua.addEventListener('click', function () {
+    window.location.href = "/paginas/cadastroMapa.html";
+});
+
+let home = document.querySelector('.bi-house-door');
+
+home.addEventListener('click', function () {
+    window.location.href = "/paginas/home.html";
+});
+
+let voltarPaginaLogin = document.querySelector('.bi-gear');
+voltarPaginaLogin.addEventListener('click', function () {
+    window.location.href = "/index.html";
+});

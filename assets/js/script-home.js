@@ -13,13 +13,4 @@ iconsTrash.forEach(function(icon) {
 });
  */
 
-let modais = document.querySelectorAll(".box");
-let exclui = document.querySelectorAll(".bi-trash");
 
-for (let i = 0; i < exclui.length; i++) {
-    exclui[i].addEventListener("click", function (event) {
-        if (!event.target.classList.contains(".bi-trash")) {
-            modais[i].remove();
-        }
-    });
-}
