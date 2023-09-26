@@ -77,7 +77,7 @@
                     <option value="contabilidade">Contabilidade</option>
                 </select>
 
-                <select name="topico" id="topico">
+                <select name="topico" id="topico" required>
                     <option>Selecione o Tópico da Área de Estudo</option>
                     <option value="anatomia">Anatomia</option>
                     <option value="medicamentos">Medicamentos</option>
@@ -89,7 +89,7 @@
 
             <div class="arquivo-envio"> 
                 <label for="imagem">Insira o arquivo PNG</label>
-                <input type="file" name="imagem" id="imagem" value="Insira o arquivo PNG">
+                <input type="file" name="imagem" id="imagem" value="Insira o arquivo PNG" required> 
             </div>
 
 
@@ -97,13 +97,14 @@
 
             <div class="text-descricao">
                 <textarea name="descricao" id="descricao" cols="30" rows="10"
-                placeholder="Descrição do mapa mental"></textarea>
+                placeholder="Descrição do mapa mental" required minlength="100"></textarea>
             </div>
 
 
             <button type="submit">Criar Mapa</button>
         </form>
     </main>
+    
 
 </body>
 
