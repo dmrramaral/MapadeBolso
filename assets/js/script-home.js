@@ -23,3 +23,17 @@ for (let i = 0; i < exclui.length; i++) {
         }
     });
 }
+
+
+let contribua = document.querySelector('.bi-plus-circle-fill');
+
+contribua.addEventListener('click', function () {
+    window.location.href = "/paginas/cadastroMapa.html";
+});
+
+let home = document.querySelector('.bi-house-door');
+
+home.addEventListener('click', function () {
+    window.location.href = "home.html";
+});
+
