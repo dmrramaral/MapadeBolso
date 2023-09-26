@@ -4,20 +4,20 @@ clickIa.addEventListener("keydown", function (event) {
     console.log(event.key);
     if (event.key == "Enter") {
         const textoDeEntrada = document.querySelector('#ia').value;
-        const chaveAPI = "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"; // Substitua pela sua chave de API
+        
 
         fetch("https://api.openai.com/v1/chat/completions",{
             method: "POST",
             headers:{
                 Accept: "application/json",
                 "Content-Type": "application/json",
-                Authorization: "Bearer " + chaveAPI,
+                Authorization: "Bearer " + $OPEN_AI,
             },
             body: JSON.stringify({
-                model: "gpt-3.5-turbo-16k",
-                messages: [{"role": "user", "content": "Say this is a test!"}],
+                model: "gpt-3.5-turbo",
                 prompt: textoDeEntrada,
-                max_tokens: 5,
+                max_tokens: 2048,
+                temperature: 0.9,
               
             }),
 
