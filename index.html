@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles-padrao.css">
     <title>Login</title>
 </head>
+
 <body>
 
     <main>
@@ -16,20 +18,25 @@
             </h1>
             <p id="contEstud">Conteúdo para estudantes</p>
 
-            <form action="" autocomplete="on">
+            <section class="popUpLogin" id="popUpLogin">
+               
+            </section>
 
-                <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <form action="">
 
-                <input type="password" name="password" id="password" placeholder="Senha" required>
+                <input type="email" name="email" id="email" placeholder="E-mail" >
 
-                <button id="btnAcao" type="submit">Entrar</button>
+                <input type="password" name="password" id="password" placeholder="Senha" >
+
+                <a href="/paginas/home.html"><button id="btnAcao">Entrar</button></a>
+
             </form>
-            
+
             <p><a href="">Esqueceu a senha?</a></p>
 
             <p>Ainda não tem uma conta?</p>
 
-            <input href="paginas/home.html" id="btnAcao" type="button" name="cadastro" value="Cadastre-se">
+            <a href="paginas/cadastroUsuario.html"><button id="btnCadastro" type="button">Cadastre-se</button></a>
 
             <p id="termo">Prosseguindo com o cadastro, você concorda com os termos de uso da plataforma.</p>
 
@@ -51,6 +58,9 @@
 
 
     </main>
-    
+
+    <script src="/assets/js/script-login.js"></script>
+
 </body>
+
 </html>

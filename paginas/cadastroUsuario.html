@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles-padrao.css">
 </head>
+
 <body>
 
     <main>
         <!-- Formulário de criação de usuarios -->
         <div id="paginaCadastro">
             <h1>Faça seu Cadastro</h1>
-            <form action="" target="_blank" >
+            <form action="" target="_blank" name="cadastro" onsubmit="return validarCadastro()">
 
-   
-                <input type="text" name="name" id="name" placeholder="Nome" required>
-    
-            
+
+                <input type="text" class="input-with-image" name="name" id="name" placeholder="Nome" required>
+
+
                 <input type="email" name="email" id="email" placeholder="E-mail" required>
-    
-              
+
+
                 <input type="password" name="password" id="password" placeholder="Senha" required>
-    
-                <input type="password" name="password" id="password" placeholder="Confirme a Senha" required>
-               
+
+                <input type="password" name="password" id="confirmPassword" placeholder="Confirme a Senha" required>
+
                 <button id="btnAcao" type="submit">Cadastre-se</button>
-    
-                
-    
                
-            </form>    
+            </form>
+           <a href="/paginas/home.html"> <button id="btnAcao" type="submit">Voltar</button></a>
+            <p id="termo">Prosseguindo com o cadastro, você concorda com os termos de uso da plataforma.</p>
         </div>
 
         <div id="paginaAzul">
@@ -49,6 +50,7 @@
 
 
     </main>
-    
+    <script src="/assets/js/script-cadastro.js"></script>
 </body>
+
 </html>

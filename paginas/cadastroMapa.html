@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa de Bolso</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/css/style-create-mapa.css">
 </head>
 
 <body>
@@ -14,74 +15,98 @@
         <h1>Mapa de Bolso</h1>
 
         <nav>
-            <ul style="list-style-type: none; display: flex; justify-content: space-evenly; ">
-                <li>
-                    <a href="">
+            <ul>
+
+                <a href="">
+                    <li>
                         <i class="bi bi-house-door"></i>
                         <p>Início</p>
-                    </a>
-                </li><!-- Início -->
-                <li><a href=""><i class="bi bi-journal-bookmark"></i>
+
+                    </li>
+                </a>
+                <!-- Início -->
+                <a href="">
+                    <li>
+                        <i class="bi bi-journal-bookmark"></i>
                         <p>Anotações </p>
-                    </a> </li><!-- Anotações -->
-                <li><a href=""><i class="bi bi-star-fill"></i>
+                    </li>
+                </a><!-- Anotações -->
+                <a href="">
+                    <li><i class="bi bi-star-fill"></i>
                         <p> Favoritos </p>
-                    </a> </li><!-- Favoritos -->
-                <li><a href=""><i class="bi bi-plus-circle-fill"></i>
+                    </li>
+                </a><!-- Favoritos -->
+                <a href="">
+                    <li><i class="bi bi-plus-circle-fill"></i>
                         <p>Contribua </p>
-                    </a> </li><!-- Contribua -->
-                <li><a href=""><i class="bi bi-gear"></i>
+                    </li>
+                </a><!-- Contribua -->
+                <a href="">
+                    <li><i class="bi bi-gear"></i>
                         <p>Ajuste </p>
-                    </a> </li><!-- Ajustes -->
+                    </li>
+                </a><!-- Ajustes -->
 
             </ul>
         </nav>
 
+        <section>
+            <form action="">
+                <input type="text" class="input-with-search" name="search" id="search" placeholder="Pesquisar">
 
-        <form action="">
-            <input type="text" name="search" id="search" placeholder="Pesquisar">
-            <button type="submit"><i class="bi bi-search"></i></button>
-        </form>
+            </form>
 
 
-
+        </section>
 
 
     </header>
+
 
     <main>
         <!-- Formulário de criação de um mapa mental, com tipo(Medicina, Administração, Contabilidade...), categoria(Se for medicina-> Anatomia, medicamentos... Se for Contabilidade-> Publica, Privada...), 
             envio de imagem, descrição -->
         <form action="" autocomplete="on">
 
+            <div class="areaBotoes">
 
-            <select name="area" id="area">
-                <option>Selecione a Área de Estudo</option>
-                <option value="medicina">Medicina</option>
-                <option value="administracao">Administração</option>
-                <option value="contabilidade">Contabilidade</option>
-            </select>
+                <select name="area" id="area">
+                    <option>Selecione a Área de Estudo</option>
+                    <option value="medicina">Medicina</option>
+                    <option value="administracao">Administração</option>
+                    <option value="contabilidade">Contabilidade</option>
+                </select>
+                <!-- Preciso fazer validação de preenchimento pois não está validando -->
 
-            <select name="topico" id="topico">
-                <option>Selecione o Tópico da Área de Estudo</option>
-                <option value="anatomia">Anatomia</option>
-                <option value="medicamentos">Medicamentos</option>
-                <option value="legislacao">Legislação</option>
-                <option value="contabilidadePublica">Contabilidade Pública</option>
-                <option value="contabilidadePrivada">Contabilidade Privada</option>
-            </select>
+                <select name="topico" id="topico" required>
+                    <option>Selecione o Tópico da Área de Estudo</option>
+                    <option value="anatomia">Anatomia</option>
+                    <option value="medicamentos">Medicamentos</option>
+                    <option value="legislacao">Legislação</option>
+                    <option value="contabilidadePublica">Contabilidade Pública</option>
+                    <option value="contabilidadePrivada">Contabilidade Privada</option>
+                </select>
+                 <!-- Preciso fazer validação de preenchimento pois não está validando -->
+            </div>
 
-            <label for="imagem">Insira o arquivo PNG</label>
-            <input type="file" name="imagem" id="imagem" value="Insira o arquivo PNG">
+            <div class="arquivo-envio"> 
+                <label for="imagem">Insira o arquivo PNG</label>
+                <input type="file" name="imagem" id="imagem" value="Insira o arquivo PNG" required> 
+            </div>
 
-     
-            <textarea name="descricao" id="descricao" cols="30" rows="10"
-                placeholder="Descrição do mapa mental"></textarea>
+
+
+
+            <div class="text-descricao">
+                <textarea name="descricao" id="descricao" cols="30" rows="10"
+                placeholder="Descrição do mapa mental" required minlength="100"></textarea>
+            </div>
 
 
             <button type="submit">Criar Mapa</button>
         </form>
     </main>
+
 
 </body>
 

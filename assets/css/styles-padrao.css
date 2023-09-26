@@ -6,6 +6,7 @@
     --primary-color: #2C64C6;
     --secondary-color: #00CCE5;
     --tertiary-color: #FFFFFF;
+    font-family: 'Ubuntu';
 }
 
 /* Reset CSS */
@@ -59,6 +60,7 @@ main #paginaLogin button {
     flex-shrink: 0;
     text-align: center;
     margin-top: 43px;
+    font-size: 25px;
 }
 
 /* Estilos para o formulário em #paginaLogin */
@@ -80,6 +82,20 @@ main #paginaLogin #btnAcao {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-top: 15px;
+}
+
+/* Estilos para o botão de ação #btnAcao em #paginaLogin */
+main #paginaLogin #btnAcao a {
+
+    color: #FFF;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 15px;
 }
 
 /* Estilos para placeholders de input em #paginaLogin */
@@ -108,7 +124,8 @@ main #paginaLogin a {
 }
 
 /* Estilos para #termo em #paginaLogin */
-main #paginaLogin #termo {
+main #paginaLogin #termo,
+main #paginaCadastro #termo {
     font-size: 12px;
     font-style: italic;
     font-weight: 400;
@@ -193,6 +210,53 @@ main #paginaCadastro {
     width: 50%;
 }
 
+main #paginaCadastro #name {
+    background-image: url(/assets/img/person-circle.png);
+    background-repeat: no-repeat;
+    background-position: 12px 12px;
+    background-size: auto 65%;
+
+}
+
+main #paginaCadastro #email {
+    background-image: url(/assets/img/email.png);
+    background-repeat: no-repeat;
+    background-position: 0.75rem 0.75rem;
+    /* 12px / 16px = 0.75rem */
+    background-size: auto 65%;
+}
+
+
+main #paginaCadastro #password {
+    background-image:
+        url('/assets/img/lock-fill.png'),
+        /* Imagem do cadeado */
+        url('/assets/img/eye-slash-fill.png');
+    /* Imagem do ícone de olho cruzado */
+
+    background-repeat: no-repeat, no-repeat;
+    /* Impede a repetição para ambas as imagens */
+    background-position: left 10px top 10px, right 10px top 10px;
+    /* Define a posição para ambas as imagens */
+    background-size: auto 65%, auto 65%;
+    /* Define o tamanho para ambas as imagens */
+}
+
+main #paginaCadastro #confirmPassword {
+    background-image:
+        url('/assets/img/lock-fill.png'),
+        /* Imagem do cadeado */
+        url('/assets/img/eye-slash-fill.png');
+    /* Imagem do ícone de olho cruzado */
+
+    background-repeat: no-repeat, no-repeat;
+    /* Impede a repetição para ambas as imagens */
+    background-position: left 10px top 10px, right 10px top 10px;
+    /* Define a posição para ambas as imagens */
+    background-size: auto 65%, auto 65%;
+    /* Define o tamanho para ambas as imagens */
+}
+
 /* Estilos para o título h1 em #paginaCadastro */
 main #paginaCadastro h1 {
     margin-top: 70px;
@@ -207,7 +271,8 @@ main #paginaCadastro h1 {
 
 /* Estilos para inputs e botão em #paginaCadastro */
 main #paginaCadastro input,
-main #paginaCadastro button {
+main #paginaCadastro button,
+main #paginaCadastro button a {
     border-radius: 25px;
     border: 1px solid var(--primary-color);
     background: #FFF;
@@ -216,6 +281,7 @@ main #paginaCadastro button {
     flex-shrink: 0;
     text-align: center;
     margin-top: 35px;
+    font-size: 20px;
 }
 
 /* Estilos para o formulário em #paginaCadastro */
@@ -224,10 +290,12 @@ main #paginaCadastro form {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 /* Estilos para o botão de ação #btnAcao em #paginaCadastro */
-main #paginaCadastro #btnAcao {
+main #paginaCadastro #btnAcao,
+main #paginaLogin #btnCadastro {
     border-radius: 20px;
     background: var(--primary-color);
     color: #FFF;
@@ -267,7 +335,9 @@ main #paginaCadastro a {
 @media screen and (max-width: 1024px) {
 
     main #paginaLogin input,
-    main #paginaLogin button {
+    main #paginaLogin button,
+    main #paginaCadastro input,
+    main #paginaCadastro button {
         width: 380px;
         height: 60px;
     }
@@ -300,7 +370,9 @@ main #paginaCadastro a {
     }
 
     main #paginaLogin input::placeholder,
-    main #paginaLogin #btnAcao {
+    main #paginaLogin #btnAcao,
+    main #paginaLogin #btnCadastro
+    {
         font-size: 15px;
     }
 
@@ -327,7 +399,9 @@ main #paginaCadastro a {
     }
 
     main #paginaCadastro input::placeholder,
-    main #paginaCadastro #btnAcao {
+    main #paginaCadastro #btnAcao,
+    main #paginaCadastro #btnCadastro{
+        
 
         font-size: 15px;
 
@@ -389,5 +463,48 @@ main #paginaCadastro a {
         padding: 0 15px;
         font-size: 20px;
     }
+
+}
+
+/* Seção que estou trabalhando com login */
+.popUpLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.confirmLogin {
+    width: 50%;
+    border: black 3px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: seagreen;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+    
+
+
+
+}
+
+.errorLogin {
+    width: 50%;
+    border: black 3px solid;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+   
 
 }
