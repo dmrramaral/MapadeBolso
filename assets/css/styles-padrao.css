@@ -123,6 +123,15 @@ main #paginaLogin a {
     text-decoration: none;
 }
 
+/* Definindo display para os campos de login */
+
+main #paginaLogin .campoLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Estilos para #termo em #paginaLogin */
 main #paginaLogin #termo,
 main #paginaCadastro #termo {

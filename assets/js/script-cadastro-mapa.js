@@ -4,40 +4,32 @@ clickIa.addEventListener("keydown", function (event) {
     console.log(event.key);
     if (event.key == "Enter") {
         const textoDeEntrada = document.querySelector('#ia').value;
-        
+        const OPEN_AI = "";
 
-        fetch("https://api.openai.com/v1/chat/completions",{
+        fetch(  "https://api.openai.com/v1/chat/gpt-3.5-turbo/completions", {
             method: "POST",
-            headers:{
+            headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json",
-                Authorization: "Bearer " + $OPEN_AI,
+                Authorization: "Bearer " + OPEN_AI,
             },
             body: JSON.stringify({
-                model: "gpt-3.5-turbo",
                 prompt: textoDeEntrada,
-                max_tokens: 2048,
-                temperature: 0.9,
-              
-            }),
-
-        })
-        .then((response) => response.json())
-        .then((data) => {
-            console.log(data);
-            if(data.error?.message){
-                document.querySelector('#descricao').value = data.error.message;
-                return;
-
-            }else if(data.choices?.[0].text){
-                var texto = data.choices[0].text || "Sem resposta";
-
-                document.querySelector('#descricao').value += "Chat GPT " + texto;
+                max_tokens: 150,
                 
-            }
-            const textoDeSaida = data.choices[0].text;
-            document.querySelector('#ia').value = textoDeSaida;
+            }),
         })
-    
-    }    
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.error?.message) {
+                    document.querySelector('#descricao').value = data.error.message;
+                    return;
+                } else if (data.choices?.[0].text) {
+                    console.log(data);
+                    const texto = data.choices[0].text;
+                    document.querySelector('#descricao').value = texto.replace(/\n\n/g, "");
+                }
+           
+            });
+    }
 });
