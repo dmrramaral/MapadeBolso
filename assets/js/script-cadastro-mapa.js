@@ -1,19 +1,28 @@
+require('dotenv').config();
+
+
 let clickIa = document.querySelector('#ia');
 
 clickIa.addEventListener("keydown", function (event) {
     console.log(event.key);
     if (event.key == "Enter") {
         const textoDeEntrada = document.querySelector('#ia').value;
-        const OPEN_AI = "";
+
+        const OPEN_AI = ""     
+        
+
 
         fetch(  "https://api.openai.com/v1/chat/gpt-3.5-turbo/completions", {
             method: "POST",
             headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json",
+
                 Authorization: "Bearer " + OPEN_AI,
             },
             body: JSON.stringify({
+
+        
                 prompt: textoDeEntrada,
                 max_tokens: 150,
                 
