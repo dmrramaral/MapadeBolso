@@ -27,8 +27,9 @@ body {
 }
 
 header {
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: baseline;
 
     background: #2C64C6 !important;
@@ -50,12 +51,13 @@ header h1 {
 
 }
 
-header nav ul {
+header nav ul,
+header nav ul p {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    padding: 0px 20px;
+    font-size: 10px;
 }
 
 header nav ul li {
@@ -176,7 +178,7 @@ main .cadastroMapa .text-descricao textarea {
 
 }
 
-#ia{
+#ia {
 
     width: 500px;
     border-radius: 25px;
@@ -191,6 +193,8 @@ main .cadastroMapa .text-descricao textarea {
     align-items: center;
 
 }
+
+
 
 
 
@@ -242,21 +246,21 @@ button {
 
 
 
-    
-    header{
+
+    header {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 20px 20px 10px 20px;
-        
+
     }
 
     header nav ul li i {
         font-size: 15px;
     }
 
-    header nav ul li  {
+    header nav ul li {
         margin-top: 5px;
         font-size: 10px;
     }
@@ -265,8 +269,8 @@ button {
         font-size: 20px;
     }
 
-    
-    #search{
+
+    #search {
         width: 300px;
         height: 20px;
         margin-top: 10px;
@@ -275,34 +279,34 @@ button {
         padding: 5px;
     }
 
-    #search::placeholder{
-      
+    #search::placeholder {
+
         font-size: 15px;
-       
+
     }
 
-    main .area-cards{
+    main .area-cards {
         display: flex;
         flex-wrap: wrap;
-        align-self:flex-start;
+        align-self: flex-start;
         justify-content: space-evenly;
         align-items: center;
-       
+
     }
 
-    
+
 
 
 }
 
 @media screen and (max-width: 768px) {
 
-    header{
+    header {
         width: 100%;
     }
 
     main .area-cards {
-       
+
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -310,29 +314,86 @@ button {
         flex-wrap: wrap;
     }
 
-   
+    main .cadastroMapa #area,
+    main .cadastroMapa #topico {
+        width: 400px;
+        height: 40px;
+        border-radius: 25px;
+        background: rgba(0, 204, 229, 0.88);
+        color: var(--tertiary-color);
+        font-size: 15px;
+        font-weight: 700;
+        padding: 10px;
+        margin: 10px;
 
-    
+
+    }
+
+    main .cadastroMapa input{
+        width: 400px;
+        height: 40px;
+        border-radius: 25px;
+        background: rgba(0, 204, 229, 0.88);
+        color: var(--tertiary-color);
+        font-size: 15px;
+        font-weight: 700;
+        padding: 10px;
+        margin: 10px;
+    }
+
+
+
+
 
 }
 
 @media screen and (max-width: 600px) {
 
-     header nav ul li i {
+    body{
+        width: 100vw;
+    }
+
+    header nav ul li i {
         font-size: 10px;
     }
-    header nav ul li  {
+
+    header nav ul li {
         margin-top: 5px;
         font-size: 10px;
     }
 
     main .area-cards {
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
     }
+
+   
+    main .cadastroMapa #ia{
+        width: 400px;
+        height: 30px;
+        border-radius: 25px;
+        background: rgba(0, 204, 229, 0.88);
+        color: var(--tertiary-color);
+        font-size: 10px;
+        font-weight: 700;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    main .cadastroMapa .text-descricao textarea{
+        width: 400px;
+        
+    }
+
+    main .cadastroMapa .text-descricao textarea::placeholder{
+        font-size: 15px;
+        
+    }
+
     
+
 }
