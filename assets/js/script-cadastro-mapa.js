@@ -1,9 +1,14 @@
+require('dotenv').config();
+
+
 let clickIa = document.querySelector('#ia');
 
 clickIa.addEventListener("keydown", function (event) {
     console.log(event.key);
     if (event.key == "Enter") {
         const textoDeEntrada = document.querySelector('#ia').value;
+        const chatGptKey = process.env.CHAT_GPT_KEY;
+        
         
 
         fetch("https://api.openai.com/v1/chat/completions",{
@@ -11,10 +16,11 @@ clickIa.addEventListener("keydown", function (event) {
             headers:{
                 Accept: "application/json",
                 "Content-Type": "application/json",
-                Authorization: "Bearer " + $OPEN_AI,
+                Authorization: "Bearer " + chatGptKey,
             },
             body: JSON.stringify({
-                model: "gpt-3.5-turbo",
+                model: "code-davinci-edit-001",
+                messages: [{"role": "user", "content": "Say this is a test!"}],
                 prompt: textoDeEntrada,
                 max_tokens: 2048,
                 temperature: 0.9,
