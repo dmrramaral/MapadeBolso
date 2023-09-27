@@ -1,4 +1,3 @@
-/* // Seleciona todos os ícones de lixeira
 let iconsTrash = document.querySelectorAll('.bi-trash');
 
 // Adiciona um ouvinte de eventos a cada ícone de lixeira
@@ -11,6 +10,6 @@ iconsTrash.forEach(function(icon) {
         }
     });
 });
- */
+ 
 
 
